@@ -1,6 +1,7 @@
 
+
 .container{
-  width: 90%;
+  width: 50%;
   display: grid;
   grid-template-rows: auto;
   /* repeat(auto-fill,minmax(200px,2fr)) */

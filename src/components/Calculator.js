@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import './Cal.css';
+import { evaluate } from 'mathjs';
 
 
 function Calculator() {
@@ -57,7 +58,7 @@ function Calculator() {
       <div className='container'>
 
         <div className='inputContainer'>
-          <h1>Calculator</h1>
+          <h1><u>Calculator</u></h1>
           <input ref={inputValu1Ref} type='text' 
           onFocus={()=>{
             val1FocStatus=true;
@@ -108,7 +109,7 @@ function Calculator() {
             val1FocStatus=false;
             val2FocStatus=false;
             ans=`${initialVal1}${operatorRef.current.value}${initialVal2}`;
-            finalAnsRef.current.value=`${ans} = ${eval(ans)}`;
+            finalAnsRef.current.value=`${ans} = ${evaluate(ans)}`;
             // console.log(ans);
           }}><b style={{color:'black', fontSize:'1.2rem'}}>=</b></button>
 
