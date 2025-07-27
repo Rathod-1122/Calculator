@@ -2,8 +2,6 @@ body, #root {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-color: 
-  #4d2ddd52;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +13,6 @@ body, #root {
   justify-content: center;
   align-items: center; 
   width: 80%;
-  background-color: aqua;
   font-family: Arial, sans-serif;
   padding: 20px;
 
