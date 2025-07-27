@@ -97,7 +97,7 @@ function Calculator() {
         {/* -------------------Buttons------------------- */}
 
         <div className='buttonContainer'>
-          {[...'+-*/%'].map((op,i)=>( 
+          {[...'+-*/%^'].map((op,i)=>( 
             <button type='button'  onClick={()=>{operatorRef.current.value=op}} key={i}>{op}</button>
           ))}
 
@@ -126,7 +126,7 @@ function Calculator() {
 
           <button type='button' title='Delete' onClick={()=>{
             deleteValue();
-          }}>D</button>
+          }}>⌫</button>
 
           {[...'0123456789.'].map(n => (
             <button key={n} type='button' onClick={() => updatedInitialVal1(n)}>{n}</button>
